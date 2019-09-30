@@ -1,0 +1,41 @@
+---
+title: "RMarkdown/KnitR Exercise"
+author: "Kristina Thumfart"
+date: "9/25/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Week 1
+
+####Exercise 2
+
+
+1. Sampling of 100 values from a log-normal distribution (mu=1, sigma=.25)
+
+```{r}
+set.seed(5)
+sample <- rlnorm(100, meanlog = 1, sdlog = 0.25)
+
+```
+
+2. Creating a histogram
+
+```{r}
+hist(sample)
+```
+
+3. Reporting the mean
+
+```{r}
+mean(sample)
+```
+
+3. Reporting the variance
+
+```{r}
+sd(sample)*sd(sample)
+```
